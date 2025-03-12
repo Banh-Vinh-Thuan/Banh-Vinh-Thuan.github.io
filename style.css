@@ -1,0 +1,101 @@
+/* css/style.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #FDF7FF; /* Màu tím pastel nhẹ */
+}
+
+img {
+    border-radius: 8px;
+    width: 500px;
+    height: 300px;
+    margin: 20px;
+}
+
+.header {
+    background-color: #EBD7FF; /* Màu tím nhạt */
+    color: #5A007A;
+    padding: 15px;
+    text-align: center;
+}
+
+nav a {
+    color: #5A007A; /* Tím đậm để dễ đọc hơn */
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    text-decoration: underline;
+}
+
+.content {
+    padding: 20px;   
+    background-color: #F6EDFF; /* Tím sữa nhạt */
+}
+
+h2, h3 {
+    color: #B35CFF; /* Màu tím pastel sáng */
+}
+
+p {
+    color: #7A1F99; /* Màu tím đậm dễ đọc */
+}
+
+ul {
+    list-style-position: inside;
+    color: #7A1F99;
+    text-indent: -50px;
+}
+
+.footer {
+    background-color: #FFD1E3; /* Hồng pastel nhẹ nhàng */
+    color: #5A007A;
+    text-align: center;
+    padding: 10px;
+}
+
+.footer a {
+    color: #5A007A;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer a:hover {
+    text-decoration: underline;
+}
+
+.social-media a {
+    color: #5A007A;
+    font-weight: bold;
+}
+
+input[type="submit"] {
+    background-color: #8A2BE2; /* Purple button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+input[type="submit"]:hover {
+    background-color: #9932cc; /* Darker purple on hover */
+}
+
+form label {
+    color: #8A2BE2; /* Purple for form labels */
+}
+
+textarea, input[type="text"], input[type="email"] {
+    border: 2px solid #B35CFF;
+    padding: 10px;
+    width: 100%;
+    max-width: 500px;
+    margin-bottom: 10px;
+    font-size: 14px;
+    background-color: #FFF8FF; /* Nền trắng có chút tím để dịu mắt */
+}

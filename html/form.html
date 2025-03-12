@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="../css/style.css">
+        <title>Contact Form</title>
+    </head>
+    <body>
+        <div class="header">
+            <h1>Form</h1>
+            <nav>
+                <a href="../index.html">Home</a> |
+                <a href="about.html">About</a> | 
+                <a href="pictures.html">About</a> | 
+                <a href="friends.html">Friends</a> | 
+                <a href="contact.html">Contact</a>
+            </nav>
+        </div>
+        <h2>Contact Us</h2>
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br><br>
+
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br><br>
+
+            <label for="gender">Gender:</label><br>
+            <input type="radio" id="male" name="gender" value="male">
+            <label for="male">Male</label><br>
+            <input type="radio" id="female" name="gender" value="female">
+            <label for="female">Female</label><br><br>
+
+            <label for="comments">Comments:</label><br>
+            <textarea id="comments" name="comments" rows="4" cols="50"></textarea><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+        <div class="footer">
+            <div class="social-media">
+                <a href="https://www.facebook.com">Facebook</a> | 
+                <a href="https://www.twitter.com">Twitter</a> | 
+                <a href="https://www.linkedin.com">LinkedIn</a>
+            </div>
+        </div>
+    </body>
+</html>
