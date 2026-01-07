@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bành Vĩnh Thuận - Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome for social icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">_Bvthuan_</div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Vĩnh Thuận</h1>
+            <p class="subtitle">Front-end Developer & Software Tester</p>
+            <p class="description">I'm an IT student driven by a passion for software testing and quality assurance, combining logical thinking with attention to detail to improve software reliability.</p>
+            <a href="#contact" class="cta-button">Get In Touch</a>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>
+                        I'm a final-year IT student preparing for graduation, with a strong interest in
+                        software testing and web development. I have hands-on experience in Java and
+                        web technologies such as PHP, React, Next.js, and Django.
+                    </p>
+                </div>
+                <div class="skills">
+                    <h3>Skills</h3>
+                    <div class="skill-tags">
+                        <span class="tag">HTML</span>
+                        <span class="tag">CSS</span>
+                        <span class="tag">JavaScript</span>
+                        <span class="tag">React</span>
+                        <span class="tag">Next.js</span>
+                        <span class="tag">Python</span>
+                        <span class="tag">Java</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2>Featured Projects</h2>
+            <div class="project-grid">
+                <div class="project-card">
+                    <img src="Web.png" alt="Web Travel Booking Project" class="project-image">
+                    <div class="project-content">
+                        <h3>Web Travel Booking with AI Chatbot</h3>
+                        <p>A web-based travel booking system integrated with an AI chatbot to assist users in searching tours, viewing details, and retrieving information efficiently.</p>
+                        <div class="project-tags">
+                            <span>PHP</span>
+                            <span>Next.js</span>
+                            <span>JavaScript</span>
+                        </div>
+                        <a href="https://github.com/Banh-Vinh-Thuan/Web_Application" target="_blank" rel="noopener noreferrer" class="project-link">
+                            View Project →
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="Spark.png" alt="Analyse Data by Spark Project" class="project-image">
+                    <div class="project-content">
+                        <h3>Analyse Data by Spark</h3>
+                        <p>A data analysis project that uses Apache Spark to process and analyze sales data, supporting insights into sales performance and trends.</p>
+                        <div class="project-tags">
+                            <span>Spark</span>
+                            <span>Python</span>
+                            <span>Collab</span>
+                        </div>
+                        <a href="https://github.com/Banh-Vinh-Thuan/Analyzing-Sales-Data-with-Apache-Spark" target="_blank" rel="noopener noreferrer" class="project-link">
+                            View Project →
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card">
+                    <img src="Pizza.png" alt="PPizza CRM Project" class="project-image">
+                    <div class="project-content">
+                        <h3>PPizza CRM</h3>
+                        <p>A CRM web application for Pizza brand that manages customer information and orders, features user roles, and visualizes data using graphs for analytics.</p>
+                        <div class="project-tags">
+                            <span>Python</span>
+                            <span>Django</span>
+                            <span>Bootstrap</span>
+                        </div>
+                        <a href="https://github.com/npkyphuong04/CRM-Project" target="_blank" rel="noopener noreferrer" class="project-link">
+                            View Project →
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Let's Work Together</h2>
+            <p class="contact-description">Have a project in mind? I'd love to hear from you!</p>
+            
+            <div class="contact-content">
+                <div class="contact-form-wrapper">
+                    <h3>Get In Touch</h3>
+                    <form class="contact-form" action="https://formspree.io/f/xgvevygk" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name:</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="email">Email:</label>
+                            <input type="email" id="email" name="_replyto" required placeholder="your.email@example.com">
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="message">Your Message:</label>
+                            <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
+                        </div>
+                        
+                        <button type="submit" class="submit-button">Send Message</button>
+                    </form>
+                </div>
+                
+                <div class="contact-info">
+                    <h3>Contact Information</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <strong>Email:</strong>
+                            <a href="mailto:banhvinhthuan3107@gmail.com">banhvinhthuan3107@gmail.com</a>
+                        </div>
+                        <div class="contact-item">
+                            <strong>Connect with me:</strong>
+                            <div class="social-links">
+                                <a href="https://www.linkedin.com/in/thu%E1%BA%ADn-b%C3%A0nh-v%C4%A9nh-490b79301/" target="_blank" rel="noopener noreferrer" class="social-link">
+                                    <i class="fab fa-linkedin"></i> LinkedIn
+                                </a>
+                                <a href="https://github.com/Banh-Vinh-Thuan" target="_blank" rel="noopener noreferrer" class="social-link">
+                                    <i class="fab fa-github"></i> GitHub
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2026 Vinh Thuan. All rights reserved.</p>
+    </footer>
+</body>
+</html>

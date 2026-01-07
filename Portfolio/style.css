@@ -1,0 +1,547 @@
+/* Import Google Fonts for better typography */
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&family=Inter:wght@400;500;600&family=Playfair+Display:wght@600;700;800&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    color: #1a202c;
+    background-color: #ffffff;
+}
+
+/* Header & Navigation */
+header {
+    background-color: #ffffff;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.75rem 5%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.35rem;
+    font-weight: 600;
+    color: #2563eb;
+    letter-spacing: -0.02em;
+}
+
+.nav-links {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #475569;
+    font-size: 0.9rem;
+    font-weight: 500;
+    transition: color 0.3s;
+    letter-spacing: -0.01em;
+}
+
+.nav-links a:hover {
+    color: #2563eb;
+}
+
+/* Hero Section - Gradient nhẹ nhàng */
+.hero {
+    min-height: 42vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(135deg,#f0f9ff 20%,#eaf4ff 60%,#f7fbff 90%,#ffffff 120%);
+    padding: 1.5rem 5%;
+    margin-top: 52px;
+}
+
+.hero-content {
+    text-align: center;
+    max-width: 900px;
+}
+
+.hero h1 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.65rem;
+    color: #0f172a;
+    letter-spacing: -0.03em;
+    line-height: 1.15;
+}
+
+.subtitle {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.15rem;
+    font-weight: 500;
+    color: #2563eb;
+    margin-bottom: 0.85rem;
+    letter-spacing: -0.01em;
+}
+
+.description {
+    font-size: 0.95rem;
+    color: #64748b;
+    margin-bottom: 1.5rem;
+    line-height: 1.7;
+    max-width: 580px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 0.875rem 2rem;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    letter-spacing: -0.01em;
+}
+
+.cta-button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 10px 25px rgba(37, 99, 235, 0.25);
+}
+
+/* Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 5%;
+}
+
+/* About Section - Nền trắng */
+.about {
+    padding: 3.5rem 0;
+    background-color: #ffffff;
+}
+
+.about h2 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 2.5rem;
+    color: #0f172a;
+    letter-spacing: -0.02em;
+}
+
+.about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.about-text p {
+    margin-bottom: 1rem;
+    color: #475569;
+    font-size: 1rem;
+    line-height: 1.75;
+}
+
+.skills h3 {
+    font-family: 'Outfit', sans-serif;
+    margin-bottom: 1.25rem;
+    color: #0f172a;
+    font-size: 1.35rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+}
+
+.skill-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+}
+
+.tag {
+    padding: 0.5rem 1.1rem;
+    background-color: #dbeafe;
+    color: #1e40af;
+    border-radius: 6px;
+    font-size: 0.875rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+}
+
+/* Projects Section - Màu xanh nhạt */
+.projects {
+    padding: 4.5rem 0;
+    background-color: #f0f9ff;
+}
+
+.projects h2 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 3rem;
+    color: #0f172a;
+    letter-spacing: -0.02em;
+}
+
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 2rem;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.project-card {
+    background-color: #ffffff;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.06);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.project-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.08);
+}
+
+.project-image {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    background: linear-gradient(135deg, #bfdbfe 0%, #ddd6fe 100%);
+}
+
+.project-content {
+    padding: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.project-card h3 {
+    font-family: 'Outfit', sans-serif;
+    color: #0f172a;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0.75rem;
+    letter-spacing: -0.01em;
+    line-height: 1.3;
+}
+
+.project-card p {
+    color: #64748b;
+    font-size: 0.925rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
+    flex-grow: 1;
+}
+
+.project-tags {
+    display: flex;
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+    flex-wrap: wrap;
+}
+
+.project-tags span {
+    padding: 0.35rem 0.85rem;
+    background-color: #fef3c7;
+    color: #b45309;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+}
+
+.project-link {
+    display: inline-flex;
+    align-items: center;
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 0.925rem;
+    font-weight: 500;
+    transition: all 0.2s ease;
+    letter-spacing: -0.01em;
+}
+
+.project-link:hover {
+    color: #1d4ed8;
+    transform: translateX(2px);
+}
+
+.project-link:visited {
+    color: #2563eb;
+}
+
+/* Contact Section - Nền trắng */
+.contact {
+    padding: 3rem 0;
+    background-color: #ffffff;
+}
+
+.contact h2 {
+    font-family: 'Playfair Display', serif;
+    text-align: center;
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 0.75rem;
+    color: #0f172a;
+    letter-spacing: -0.02em;
+}
+
+.contact-description {
+    text-align: center;
+    color: #64748b;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.contact-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.contact-form-wrapper h3,
+.contact-info h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: #0f172a;
+    margin-bottom: 1.25rem;
+    letter-spacing: -0.01em;
+}
+
+/* Contact Form */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 1.1rem;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+}
+
+.form-group label {
+    font-size: 0.925rem;
+    color: #334155;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+}
+
+.form-group input,
+.form-group textarea {
+    padding: 0.875rem 1rem;
+    font-size: 0.95rem;
+    border: 2px solid #e2e8f0;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    transition: all 0.3s ease;
+    background-color: #ffffff;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+    box-shadow: 0 0 0 3px rgba(37, 99, 235, 0.1);
+}
+
+.form-group textarea {
+    resize: vertical;
+    min-height: 130px;
+}
+
+.submit-button {
+    padding: 1rem 2.25rem;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    letter-spacing: -0.01em;
+}
+
+.submit-button:hover {
+    background-color: #1d4ed8;
+    transform: translateY(-1px);
+    box-shadow: 0 12px 28px rgba(37, 99, 235, 0.3);
+}
+
+/* Contact Info */
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 1.75rem;
+}
+
+.contact-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+}
+
+.contact-item strong {
+    font-size: 0.925rem;
+    color: #334155;
+    font-weight: 600;
+}
+
+.contact-item a {
+    color: #2563eb;
+    text-decoration: none;
+    font-size: 0.975rem;
+    transition: color 0.3s;
+    font-weight: 500;
+}
+
+.contact-item a:hover {
+    color: #1d4ed8;
+}
+
+.social-links {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.social-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.75rem 1.5rem;
+    background-color: #ffffff;
+    color: #2563eb;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 0.95rem;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid #2563eb;
+    letter-spacing: -0.01em;
+}
+
+.social-link:hover {
+    background-color: #2563eb;
+    color: #ffffff;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(37, 99, 235, 0.25);
+}
+
+.social-link i {
+    font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+    background-color: #1e293b;
+    color: #cbd5e1;
+    text-align: center;
+    padding: 2rem 0;
+    font-size: 0.925rem;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero {
+        min-height: 75vh;
+        margin-top: 52px;
+    }
+
+    .hero h1 {
+        font-size: 2.25rem;
+    }
+
+    .subtitle {
+        font-size: 1.1rem;
+    }
+
+    .description {
+        font-size: 0.95rem;
+    }
+
+    .about {
+        padding: 3rem 0;
+    }
+
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .nav-links {
+        gap: 1.25rem;
+    }
+
+    .nav-links a {
+        font-size: 0.85rem;
+    }
+
+    .project-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .contact-content {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+    }
+
+    .contact h2,
+    .about h2,
+    .projects h2 {
+        font-size: 2rem;
+    }
+
+    .social-links {
+        flex-direction: row;
+    }
+}
+
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 1.9rem;
+    }
+
+    .subtitle {
+        font-size: 1rem;
+    }
+
+    nav {
+        padding: 0.7rem 4%;
+    }
+
+    .nav-links {
+        gap: 1rem;
+    }
+
+    .logo {
+        font-size: 1.2rem;
+    }
+}
