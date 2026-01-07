@@ -59,7 +59,7 @@ nav {
     color: #2563eb;
 }
 
-/* Hero Section - Gradient nhẹ nhàng */
+/* Hero Section - Light gradient background */
 .hero {
     min-height: 42vh;
     display: flex;
@@ -68,6 +68,7 @@ nav {
     background: linear-gradient(135deg,#f0f9ff 20%,#eaf4ff 60%,#f7fbff 90%,#ffffff 120%);
     padding: 1.5rem 2%;
     margin-top: 52px;
+    scroll-margin-top: 70px;
 }
 
 .hero-content {
@@ -130,64 +131,126 @@ nav {
     padding: 0 2%;
 }
 
-/* About Section - Nền trắng */
+/* About Section - White background - Compact Design */
 .about {
-    padding: 3.5rem 0;
+    padding: 2rem 0;
     background-color: #ffffff;
+    scroll-margin-top: 70px;
 }
 
 .about h2 {
     font-family: 'Playfair Display', serif;
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: 700;
-    margin-bottom: 2.5rem;
+    margin-bottom: 1.5rem;
     color: #0f172a;
     letter-spacing: -0.02em;
 }
 
 .about-content {
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 3rem;
+    grid-template-columns: 1fr 1.2fr;
+    gap: 2.5rem;
+    max-width: 1200px;
+    margin: 0 auto;
+    align-items: center;
+}
+
+.about-text {
+    text-align: justify;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .about-text p {
-    margin-bottom: 1rem;
-    color: #475569;
-    font-size: 1rem;
-    line-height: 1.75;
+    background: linear-gradient(135deg, #1e293b 0%, #334155 50%, #475569 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    font-size: 0.95rem;
+    line-height: 1.7;
 }
 
-.skills h3 {
+.skills-section h3 {
     font-family: 'Outfit', sans-serif;
-    margin-bottom: 1.25rem;
+    margin-bottom: 1rem;
     color: #0f172a;
-    font-size: 1.35rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.01em;
+}
+
+.skill-category {
+    margin-bottom: 1.2rem;
+}
+
+.skill-category:last-child {
+    margin-bottom: 0;
+}
+
+.skill-category h4 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 0.95rem;
     font-weight: 600;
-    letter-spacing: -0.01em;
-}
-
-.skill-tags {
+    color: #1e293b;
+    margin-bottom: 0.6rem;
     display: flex;
-    flex-wrap: wrap;
-    gap: 0.7rem;
-}
-
-.tag {
-    padding: 0.5rem 1.1rem;
-    background-color: #dbeafe;
-    color: #1e40af;
-    border-radius: 6px;
-    font-size: 0.875rem;
-    font-weight: 500;
+    align-items: center;
+    gap: 0.5rem;
     letter-spacing: -0.01em;
 }
 
-/* Projects Section - Màu xanh nhạt */
+.skill-category h4 i {
+    color: #2563eb;
+    font-size: 1rem;
+}
+
+.skill-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(80px, 1fr));
+    gap: 0.6rem;
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.35rem;
+    padding: 0.6rem 0.4rem;
+    background-color: #f8fafc;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    border: 2px solid #e2e8f0;
+}
+
+.skill-item:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(37, 99, 235, 0.15);
+    border-color: #2563eb;
+    background-color: #ffffff;
+}
+
+.skill-item img {
+    width: 32px;
+    height: 32px;
+    object-fit: contain;
+}
+
+.skill-item span {
+    font-size: 0.75rem;
+    font-weight: 600;
+    color: #334155;
+    letter-spacing: -0.01em;
+    text-align: center;
+}
+
+/* Projects Section - Light blue background */
 .projects {
     padding: 4.5rem 0;
     background-color: #f0f9ff;
+    scroll-margin-top: 70px;
 }
 
 .projects h2 {
@@ -294,10 +357,11 @@ nav {
     color: #2563eb;
 }
 
-/* Contact Section - Nền trắng */
+/* Contact Section - White background */
 .contact {
     padding: 3rem 0;
     background-color: #ffffff;
+    scroll-margin-top: 70px;
 }
 
 .contact h2 {
@@ -480,6 +544,19 @@ footer {
     .project-grid {
         grid-template-columns: repeat(2, 1fr);
     }
+    
+    .about-content {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+    
+    .about-text {
+        text-align: justify;
+    }
+    
+    .about-text p {
+        text-align: justify;
+    }
 }
 
 @media (max-width: 768px) {
@@ -501,12 +578,25 @@ footer {
     }
 
     .about {
-        padding: 3rem 0;
+        padding: 2rem 0;
     }
 
-    .about-content {
-        grid-template-columns: 1fr;
-        gap: 2.5rem;
+    .skill-items {
+        grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
+        gap: 0.5rem;
+    }
+
+    .skill-item {
+        padding: 0.5rem 0.3rem;
+    }
+
+    .skill-item img {
+        width: 28px;
+        height: 28px;
+    }
+
+    .skill-item span {
+        font-size: 0.7rem;
     }
 
     .nav-links {
