@@ -131,7 +131,7 @@ nav {
     padding: 0 2%;
 }
 
-/* About Section - White background - Compact Design */
+/* About Section - White background - Compact Design with Symmetry */
 .about {
     padding: 2rem 0;
     background-color: #ffffff;
@@ -154,14 +154,18 @@ nav {
     gap: 2.5rem;
     max-width: 1200px;
     margin: 0 auto;
-    align-items: center;
+    align-items: start;
+}
+
+/* Left Column - About text and new skills */
+.about-left {
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
 }
 
 .about-text {
     text-align: justify;
-    display: flex;
-    align-items: center;
-    justify-content: center;
 }
 
 .about-text p {
@@ -171,6 +175,12 @@ nav {
     background-clip: text;
     font-size: 0.95rem;
     line-height: 1.7;
+}
+
+/* Right Column - Technical Skills */
+.about-right {
+    display: flex;
+    flex-direction: column;
 }
 
 .skills-section h3 {
@@ -236,6 +246,12 @@ nav {
     width: 32px;
     height: 32px;
     object-fit: contain;
+}
+
+/* Icon styling for skills without images (Manual Testing, Test Case Design) */
+.skill-icon {
+    font-size: 32px;
+    color: #2563eb;
 }
 
 .skill-item span {
@@ -590,9 +606,11 @@ footer {
         padding: 0.5rem 0.3rem;
     }
 
-    .skill-item img {
+    .skill-item img,
+    .skill-icon {
         width: 28px;
         height: 28px;
+        font-size: 28px;
     }
 
     .skill-item span {
