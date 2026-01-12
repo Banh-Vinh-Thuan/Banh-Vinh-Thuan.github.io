@@ -688,7 +688,7 @@ nav {
 }
 
 .social-link:hover {
-    background-color: #2563eb;
+    background-color: #e9e9e9;
     color: #ffffff;
     transform: translateY(-2px);
     box-shadow: 0 8px 20px rgba(37, 99, 235, 0.3);
