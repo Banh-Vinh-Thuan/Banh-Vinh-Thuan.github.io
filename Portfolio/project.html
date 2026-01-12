@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Details - Bánh Vĩnh Thuận</title>
+    <link rel="stylesheet" href="./css/project.css">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Header Navigation -->
+    <header>
+        <nav>
+            <div class="logo">_Bvthuan_</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#projects">Projects</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Loading State -->
+    <div id="loading" class="loading">
+        <div class="spinner"></div>
+        <p>Loading project details...</p>
+    </div>
+
+    <!-- Error State -->
+    <div id="error" class="error" style="display: none;">
+        <div class="error-content">
+            <i class="fas fa-exclamation-triangle"></i>
+            <h2>Project Not Found</h2>
+            <p>Sorry, we couldn't find the project you're looking for.</p>
+            <a href="index.html#projects" class="back-button">
+                <i class="fas fa-arrow-left"></i> Back to Projects
+            </a>
+        </div>
+    </div>
+
+    <!-- Project Content -->
+    <main id="project-content" style="display: none;">
+        <!-- Back Button -->
+        <div class="container">
+            <a href="index.html#projects" class="back-link">
+                <i class="fas fa-arrow-left"></i> Back to Projects
+            </a>
+        </div>
+
+        <!-- Project Header -->
+        <section class="project-header">
+            <div class="container">
+                <div class="project-meta">
+                    <span class="meta-item">
+                        <i class="fas fa-users"></i>
+                        <span id="project-type">Group Project</span>
+                    </span>
+                    <span class="meta-item">
+                        <i class="fas fa-calendar"></i>
+                        <span id="project-duration">8 weeks</span>
+                    </span>
+                </div>
+                <h1 id="project-title">Project Title</h1>
+                <p class="course-info">
+                    <i class="fas fa-book"></i>
+                    <span id="course-name">Course Name</span>
+                </p>
+                <p class="role-info">
+                    <i class="fas fa-user-tag"></i>
+                    <strong>Role:</strong> <span id="role">Developer</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- Problem & Objective -->
+        <section class="project-section">
+            <div class="container">
+                <div class="info-grid">
+                    <div class="info-card">
+                        <h2><i class="fas fa-exclamation-circle"></i> Problem</h2>
+                        <p id="problem">Problem description goes here...</p>
+                    </div>
+                    <div class="info-card">
+                        <h2><i class="fas fa-bullseye"></i> Objective</h2>
+                        <p id="objective">Objective description goes here...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Key Features -->
+        <section class="project-section bg-light">
+            <div class="container">
+                <h2><i class="fas fa-star"></i> Key Features</h2>
+                <ul id="key-features" class="features-list">
+                    <!-- Features will be populated by JavaScript -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- Tech Stack -->
+        <section class="project-section">
+            <div class="container">
+                <h2><i class="fas fa-code"></i> Tech Stack</h2>
+                <div id="tech-stack" class="tech-stack-grid">
+                    <!-- Tech stack will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Results -->
+        <section class="project-section bg-light">
+            <div class="container">
+                <h2><i class="fas fa-trophy"></i> Results & Achievements</h2>
+                <ul id="results" class="results-list">
+                    <!-- Results will be populated by JavaScript -->
+                </ul>
+            </div>
+        </section>
+
+        <!-- Project Images -->
+        <section id="images-section" class="project-section" style="display: none;">
+            <div class="container">
+                <h2><i class="fas fa-images"></i> Project Screenshots</h2>
+                <div id="project-images" class="project-gallery">
+                    <!-- Images will be populated by JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Demo Video -->
+        <section id="video-section" class="project-section bg-light" style="display: none;">
+            <div class="container">
+                <h2><i class="fas fa-video"></i> Demo Video</h2>
+                <div class="video-container">
+                    <iframe id="demo-video" 
+                            src="" 
+                            frameborder="0" 
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen>
+                    </iframe>
+                </div>
+            </div>
+        </section>
+
+        <!-- Project Links -->
+        <section class="project-section">
+            <div class="container">
+                <div class="project-links">
+                    <a id="github-link" href="#" target="_blank" rel="noopener noreferrer" class="project-button" style="display: none;">
+                        <i class="fab fa-github"></i> View on GitHub
+                    </a>
+                    <a id="live-demo" href="#" target="_blank" rel="noopener noreferrer" class="project-button" style="display: none;">
+                        <i class="fas fa-external-link-alt"></i> Live Demo
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Vinh Thuan. All rights reserved.</p>
+    </footer>
+
+    <!-- JavaScript -->
+    <script src="project-detail.js"></script>
+</body>
+</html>

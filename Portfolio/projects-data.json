@@ -1,0 +1,210 @@
+{
+  "projects": [
+    {
+      "id": "web-travel-booking",
+      "title": "Travel Booking Website with RAG-based Chatbot",
+      "courseName": "Web Application Development",
+      "projectType": "Graduation Project",
+      "role": "Full-stack Developer",
+      "duration": "12 weeks (Sep – Dec 2025)",
+      "problem": "Traditional travel booking websites often lack personalized assistance, making it difficult for users to find tours that match their specific preferences. Users need to manually search through multiple pages to find relevant information.",
+      "objective": "Develop an intelligent travel booking platform that provides instant, contextual assistance through an AI-powered chatbot, improving user experience and booking efficiency.",
+      "keyFeatures": [
+        "AI-powered chatbot using RAG (Retrieval-Augmented Generation) for intelligent tour/hotel recommendations",
+        "Real-time tour search and filtering system",
+        "Detailed tour information pages with images, itineraries, and pricing",
+        "User authentication and profile management",
+        "Booking management system with order tracking",
+        "Admin dashboard for tour and hotel booking management"
+        ],
+      "techStack": {
+        "frontend": ["HTML", "CSS", "JavaScript", "Next.js"],
+        "backend": ["PHP", "FlightPHP"],
+        "database": ["MySQL"],
+        "ai": ["RAG (Retrieval-Augmented Generation)", "OpenAI API", "Vector Database"]
+      },
+      "results": [
+        "Successfully implemented all core features including AI chatbot integration",
+        "Chatbot achieved 85% accuracy in understanding user queries and providing relevant tour suggestions",
+        "Reduced average search time by 40% compared to traditional search methods"
+      ],
+      "images": ["./images/Web.png", "./images/Web1.png", "./images/Web2.png"],
+      "demoVideo": "",
+      "githubLink": "https://github.com/Banh-Vinh-Thuan/Web_Application",
+      "liveDemo": ""
+    },
+    {
+      "id": "spark-data-analysis",
+      "title": "Sales Data Analysis with Apache Spark",
+      "courseName": "Scalable and Distributed Computing",
+      "projectType": "Group Project (4 members)",
+      "role": "Project Manager",
+      "duration": "6 weeks (Dec - Jan 2025)",
+      "problem": "Analyzing large-scale sales data using traditional methods is time-consuming and inefficient. Businesses need faster insights to make timely decisions.",
+      "objective": "Build a distributed data processing pipeline using Apache Spark to analyze sales trends, customer behavior, and product performance efficiently.",
+      "keyFeatures": [
+        "Exploratory data analysis (EDA) on medium-sized CSV datasets (~440K records)",
+        "Sales performance analysis by region, product category, and time period",
+        "Customer segmentation based on purchasing behavior",
+        "Trend analysis and forecasting using statistical techniques",
+        "Interactive data visualization with charts and dashboards",
+        "Performance optimization using Apache Spark’s distributed computing"
+      ],
+      "techStack": {
+        "platform": ["Google Colab"],
+        "environment": ["Jupyter Notebook"],
+        "programmingLanguage": ["Python"],
+        "bigDataFramework": ["Apache Spark", "PySpark"],
+        "dataProcessing": ["Spark SQL", "RDD", "DataFrame API"],
+        "machineLearning": ["Spark MLlib (K-Means, FP-Growth)"],
+        "dataAnalysis": ["Exploratory Data Analysis (EDA)"],
+        "dataStorage": ["CSV", "Parquet", "HDFS"]
+      },
+      "results": [
+        "Efficiently processed ~440K sales records using Apache Spark",
+        "Identified key sales patterns and seasonal trends across regions and product categories",
+        "Improved data processing efficiency compared to single-machine Pandas workflows",
+        "Generated actionable insights to support data-driven business decisions"
+      ],
+      "images": ["./images/Spark.png", "./images/Spark1.png", "./images/Spark2.png"],
+      "demoVideo": "",
+      "githubLink": "https://github.com/Banh-Vinh-Thuan/Analyzing-Sales-Data-with-Apache-Spark",
+      "liveDemo": ""
+    },
+    {
+      "id": "pizza-crm",
+      "title": "Pizza CRM - Customer Relationship Management System",
+      "courseName": "Information System Management",
+      "projectType": "Group Project (7 members)",
+      "role": "Frontend Developer",
+      "duration": "6 weeks (Apr - May 2025)",
+      "problem": "Small pizza businesses struggle to manage customer data, orders, and sales analytics efficiently without expensive CRM solutions.",
+      "objective": "Create an affordable, user-friendly CRM system tailored for pizza restaurants to manage customer relationships, track orders, and visualize sales data.",
+      "keyFeatures": [
+        "Customer database management with detailed profiles",
+        "Order tracking system with status updates",
+        "Role-based access control (User, System)",
+        "Sales analytics dashboard with interactive charts",
+        "Customer segmentation and loyalty program management"
+      ],
+      "techStack": {
+        "frontend": ["Bootstrap", "JavaScript", "HTML", "CSS"],
+        "backend": ["Python", "Django"],
+        "database": ["MySQL"],
+        "ai": []
+      },
+      "results": [
+        "Successfully deployed and tested with a local pizza restaurant",
+        "Improved order management efficiency by 50%",
+        "Reduced manual data entry errors by 70%"
+      ],
+      "images": ["./images/Pizza.png", "./images/Pizza1.png", "./images/Pizza2.png"],
+      "demoVideo": "",
+      "githubLink": "https://github.com/npkyphuong04/CRM-Project",
+      "liveDemo": ""
+    },
+    {
+      "id": "minesweeper-game",
+      "title": "Minesweeper Game with Advanced Undo Algorithm",
+      "courseName": "Data Structures & Algorithms Course",
+      "projectType": "Individual Project",
+      "role": "Solo Developer",
+      "duration": "8 weeks (Apr - Jun 2024)",
+      "problem": "Traditional Minesweeper games lack the ability to undo moves, making mistakes irreversible and frustrating for players learning the game.",
+      "objective": "Develop a Minesweeper game with an efficient undo/redo system using stack-based algorithms to improve user experience and learning.",
+      "keyFeatures": [
+        "Classic Minesweeper gameplay with multiple difficulty levels",
+        "Advanced undo/redo functionality using stack data structure",
+        "Game state management with efficient memory usage"
+      ],
+      "techStack": {
+        "frontend": ["Java Swing", "AWT"],
+        "backend": ["Java"],
+        "database": [],
+        "ai": []
+      },
+      "results": [
+        "Successfully implemented efficient undo algorithm with O(1) time complexity",
+        "Game runs smoothly with no performance issues",
+        "Demonstrated strong understanding of stack data structure and state management",
+        "Code praised for clean architecture and documentation"
+      ],
+      "images": ["./images/Minesweeper.png", "./images/Minesweeper1.png"],
+      "demoVideo": "",
+      "githubLink": "https://github.com/Banh-Vinh-Thuan/Minesweeper",
+      "liveDemo": ""
+    },
+    {
+      "id": "tetris-game",
+      "title": "Tetris Game with Advanced Mechanics",
+      "courseName": "Object-Oriented Programming Course",
+      "projectType": "Group Project (3 members)",
+      "role": "Design Blocks and Game Logic Developer",
+      "duration": "8 weeks (Apr - May 2023)",
+      "problem": "Learning object-oriented programming concepts can be abstract without practical application in real-world scenarios.",
+      "objective": "Build a fully functional Tetris game to demonstrate mastery of OOP principles including inheritance, polymorphism, and design patterns.",
+      "keyFeatures": [
+        "Classic Tetris gameplay with 7 tetromino shapes",
+        "Smooth piece rotation and collision detection",
+        "Line-clearing mechanics with scoring system",
+        "Increasing difficulty levels as score progresses",
+        "Next piece preview and hold functionality",
+        "Pause and restart capabilities",
+        "Sound effects and visual feedback"
+      ],
+      "techStack": {
+        "frontend": ["Java Swing"],
+        "backend": ["Java"],
+        "database": [],
+        "ai": []
+      },
+      "results": [
+        "Implemented all core Tetris mechanics with smooth gameplay",
+        "Applied OOP principles effectively with clean code structure",
+        "Demonstrated strong understanding of event-driven programming"
+      ],
+      "images": ["./images/terris.png"],
+      "demoVideo": "",
+      "githubLink": "https://github.com/Banh-Vinh-Thuan/Tetris",
+      "liveDemo": ""
+    },
+    {
+      "id": "pos-system",
+      "title": "Real-time Point of Sale (POS) System",
+      "courseName": "Personal Project",
+      "projectType": "Individual Project",
+      "role": "Full-stack Developer",
+      "duration": "1 weeks (Jan 2026)",
+      "problem": "Implement a simple Point-of-Sale (POS) system as a technical assignment, focusing on real-time order synchronization between two screens.",
+      "objective": "Develop a lightweight web-based POS application with real-time order updates using WebSocket-based communication.",
+      "keyFeatures": [
+        "POS screen displaying a list of products with name and price",
+        "Add-to-cart functionality with quantity adjustment",
+        "Real-time total amount calculation",
+        "Checkout workflow with backend order creation",
+        "Success notification after payment completion",
+        "Automatic cart reset after successful checkout",
+        "Real-time order display on a secondary screen without page reload",
+        "Live order synchronization using Socket.IO",
+        "Order details including order ID, total amount, and payment timestamp"
+      ],
+      "techStack": {
+        "frontend": ["React", "HTML", "CSS"],
+        "backend": ["Node.js", "Express"],
+        "realTime": ["Socket.IO"],
+        "dataStorage": ["In-memory storage"]
+      },
+      "results": [
+        "Implemented real-time order updates between POS screen and order display using Socket.IO",
+        "Successfully handled multiple concurrent clients during local testing",
+        "Completed all functional requirements specified in the interview assignment",
+        "Delivered a clean, easy-to-use interface with a clear POS workflow",
+        "Demonstrated solid understanding of full-stack development and real-time web communication"
+      ],
+      "images": ["./images/POS.png"],
+      "demoVideo": "",
+      "githubLink": "https://github.com/Banh-Vinh-Thuan/pos-system",
+      "liveDemo": ""
+    }
+  ]
+}
